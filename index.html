@@ -75,7 +75,10 @@
   <!-- ================= HERO STAGE (pinned, scroll-zoom) ================= -->
   <section class="stage" id="stage" aria-label="Introduction">
     <div class="stage__sticky" id="stageSticky">
-      <canvas class="stage__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="stage__aura" aria-hidden="true">
+        <span class="aura aura--1"></span>
+        <span class="aura aura--2"></span>
+      </div>
       <div class="stage__vignette" aria-hidden="true"></div>
       <div class="stage__grain" aria-hidden="true"></div>
 
@@ -524,10 +527,8 @@
   </footer>
 
   <!-- Libraries (CDN) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-  <script src="assets/js/hero3d.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>

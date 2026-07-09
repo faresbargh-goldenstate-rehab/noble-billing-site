@@ -30,8 +30,7 @@ Pages, or S3. No server code. For Vercel: `vercel deploy` from this directory.
 ```
 index.html              # all page markup + metadata + JSON-LD
 assets/css/styles.css    # design tokens + every section's styles
-assets/js/hero3d.js      # Three.js "revenue network" hero background
-assets/js/main.js        # scroll choreography, count-ups, charts, nav
+assets/js/main.js        # scroll choreography, count-ups, charts, nav, form
 .claude/launch.json      # local preview server config
 ```
 
@@ -108,11 +107,11 @@ to the documented **Next.js + React + TS + Tailwind + Motion** stack:
 
 - Each `<section>` → a React component (`Hero`, `Metrics`, `Pipeline`, `Solutions`,
   `Dashboard`, `WhyNoble`, `Leadership`, `CTA`, `Footer`).
-- `hero3d.js` → a `HeroCanvas` client component (react-three-fiber optional).
 - The GSAP scroll timeline → `motion` `useScroll`/`useTransform`, or keep GSAP.
 - Content strings → a typed `content.ts` config object.
 - Add routes `/solutions/*`, `/results`, `/about`, `/contact` using the SEO plan above.
 
 ## Credits / libraries
 
-Three.js r128, GSAP 3.12 + ScrollTrigger (CDN). Swap to npm packages when porting.
+GSAP 3.12 + ScrollTrigger (CDN). Swap to npm packages when porting. The hero
+background is pure CSS (soft blurred glows) — no WebGL dependency.

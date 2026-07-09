@@ -1,0 +1,10 @@
+# Confidential client dossier — never publish
+PDF document.pdf
+*.pdf
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+
+# Claude Code local config
+.claude/
